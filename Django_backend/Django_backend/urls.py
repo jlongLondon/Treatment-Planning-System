@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django_app import views as django_app_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('vue-test', django_app_views.vue_test),
 ]
